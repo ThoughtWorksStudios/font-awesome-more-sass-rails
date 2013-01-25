@@ -32,8 +32,8 @@
   }
 }
 
-@mixin icon($type, $size: auto, $margin: 10px, $color: auto, $top: auto, $shadow: none) {
-  &:before {
+@mixin icon-after($type, $size: auto, $margin: 10px, $color: auto, $top: auto, $shadow: none) {
+  &:after {
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
