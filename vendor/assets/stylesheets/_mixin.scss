@@ -1,0 +1,50 @@
+@mixin icon($type, $size: auto, $margin: 10px, $color: auto, $top: auto, $shadow: none) {
+  &:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    line-height: 1em;
+    @include icon-glyph($type);
+    @if $margin != auto  { margin-right: $margin; }
+    @if $size != auto    { font-size: $size; }
+    @if $top != auto     { position: relative; top: $top; }
+    @if $color != auto   { color: $color; }
+    @if $shadow != none  { text-shadow: $shadow; }
+  }
+}
+
+@mixin icon-before($type, $size: auto, $margin: 10px, $color: auto, $top: auto, $shadow: none) {
+  &:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    line-height: 1em;
+    @include icon-glyph($type);
+    @if $margin != auto  { margin-right: $margin; }
+    @if $size != auto    { font-size: $size; }
+    @if $top != auto     { position: relative; top: $top; }
+    @if $color != auto   { color: $color; }
+    @if $shadow != none  { text-shadow: $shadow; }
+  }
+}
+
+@mixin icon($type, $size: auto, $margin: 10px, $color: auto, $top: auto, $shadow: none) {
+  &:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    line-height: 1em;
+    @include icon-glyph($type);
+    @if $margin != auto  { margin-right: $margin; }
+    @if $size != auto    { font-size: $size; }
+    @if $top != auto     { position: relative; top: $top; }
+    @if $color != auto   { color: $color; }
+    @if $shadow != none  { text-shadow: $shadow; }
+  }
+}
